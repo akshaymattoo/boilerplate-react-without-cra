@@ -1,0 +1,44 @@
+{
+  "name": "boilerplate-react-without-cra",
+  "version": "1.0.0",
+  "description": "This is a React project setup where we are not using standard CRA. CRA is a great tool but for a small project or a quick proptype, it can be a big overhead sometimes. Also learning about things how they actually work is great.  Say in the current project we want to make some changes in webpack by this project we can easily learn about thigs. We get a quick understanding of the below things.",
+  "main": "index.js",
+  "babel": {
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ]
+  },
+  "scripts": {
+    "start": "webpack serve --port 3000 --hot --open",
+    "build": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akshaymatoo/boilerplate-react-without-cra.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akshaymatoo/boilerplate-react-without-cra/issues"
+  },
+  "homepage": "https://github.com/akshaymatoo/boilerplate-react-without-cra#readme",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^5.2.0",
+    "html-webpack-plugin": "^5.3.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.28.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

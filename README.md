@@ -20,13 +20,13 @@ We will be using npm to set up the project
 - npm init -y
  The above command initializes the package.json file. This file has content about dependencies what the project depends on. We can find dependencies in `devDependencies` and `dependencies` sections. This file has some metadata information as well. 
 - npm i react react-dom
- The above command will install `react` and `react-dom`. We can see that in `dependencies`. 
+ The above command will install `react` and `react-dom`. We can see that in `dependencies`. Also you will see `node_modules` directory under root.
 - mkdir src
 - touch src/index.js
-- touch src/app.js
-- touch src/app.css
+- touch src/App.js
+- touch src/App.css
 - mkdir public
-- touch index.html
+- touch public/index.html
 - npm i -D @babel/core @babel/preset-env @babel/preset-react webpack webpack-cli webpack-dev-server babel-loader css-loader style-loader html-webpack-plugin
 
 The above command will install all the dependencies we need to setup. We can see all of them under `devDependencies`.
@@ -120,10 +120,10 @@ import App from './App';
 ReactDOM.render(<App />, document.getElementById('root'));
 
 ```
-Open app.js file and paste the below content.
+Open App.js file and paste the below content.
 ```
 import React from 'react';
-import './app.css';
+import './App.css';
 
 function App (){
 	return(
@@ -135,23 +135,23 @@ function App (){
 export default App;
 ```
 
-Open app.css and paste the below content
+Open App.css and paste the below content
 
 ```
 * {
-	margin:0;
+  margin:0;
   box-sizing: border-box;
 }
 
 .app {
-	display: flex;
-	margin:0 auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 5em;
 }
-
 ```
 
-run `npm run start` from the root directory. This will open a page at port 3000. We can change the port in `start` in `package.json`.
-Up to this point, we have a simple text displayed on the screen. Our app is fully functional.
+run `npm run start` from the root directory. This will open a page at port 3000. You will see some text on the screen.We can change the port in `start` in `package.json`.
+Up to this point, we have a simple text displayed on the screen. Our app is fully functional. You can add some comonents to it and start working.
 For any confusion please refer to the code in the repository.
 # Please feel free to open issues if you find anything wrong with the instructions
  
