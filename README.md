@@ -27,6 +27,8 @@ We will be using npm to set up the project
 - touch src/App.css
 - mkdir public
 - touch public/index.html
+- touch .gitignore
+ Copy the contents of the file from the project.
 - npm i -D @babel/core @babel/preset-env @babel/preset-react webpack webpack-cli webpack-dev-server babel-loader css-loader style-loader html-webpack-plugin
 
 The above command will install all the dependencies we need to setup. We can see all of them under `devDependencies`.
