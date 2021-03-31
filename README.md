@@ -1,23 +1,24 @@
 # boilerplate-react-without-cra
 
-This is a React project setup where we are not using standard CRA. CRA is a great tool but for small project or a quick proptype it can be a big overhead sometime. Also learning about things how they actually work is great. 
-Say in the current project we want to make some changes in webpack by this project we can easily learn about thigs. We get a quick understanding about the below things.
+This is a React project setup where we are not using standard CRA. CRA is a great tool but for a small project or a quick proptype, it can be a big overhead sometimes. Also learning about things how they actually work is great. 
+Say in the current project we want to make some changes in webpack by this project we can easily learn about thigs. We get a quick understanding of the below things.
 
-- How things are strutured in React?
-- How React understands JSX and converts it to ES5 JS?
+- How things are structured in React?
+- How React understand JSX and converts it to ES5 JS?
 - What webpack is?
-- ESLint for follow standard Airbnb practices.
+- ESLint for following standard Airbnb practices.
 - Testing react with react-testing-library.
 
+Before we dive into setup I recommend doing all the steps manually. If you have some idea beforehand you can also git clone the project start working on your idea.
 
 # Setup basic React functioning
 
-We will be using npm to setup the project
+We will be using npm to set up the project
 - mkdir <directory_name>
- Choose the directory_name as per your convinienece. 
+ Choose the directory_name at your convinienece. 
  - cd <directory_name>
 - npm init -y
- The above command initialises the package.json file. This file has content about dependencies what project depends on. We can find dependencies in `devDependencies` and `dependencies` section. This file has some metadata information as well. 
+ The above command initializes the package.json file. This file has content about dependencies what the project depends on. We can find dependencies in `devDependencies` and `dependencies` sections. This file has some metadata information as well. 
 - npm i react react-dom
  The above command will install `react` and `react-dom`. We can see that in `dependencies`. 
 - mkdir src
@@ -29,7 +30,7 @@ We will be using npm to setup the project
 - npm i -D @babel/core @babel/preset-env @babel/preset-react webpack webpack-cli webpack-dev-server babel-loader css-loader style-loader html-webpack-plugin
 
 The above command will install all the dependencies we need to setup. We can see all of them under `devDependencies`.
-Open the code in editor of choice.
+Open the code in the editor of choice.
 
 Open public/index.html and paste the below content
 ```
@@ -48,7 +49,7 @@ Open public/index.html and paste the below content
 Open webpack.config.js and paste the below content.
 
 ```
-// module bundler . Inteligently bundles all the files that we can access in index.js
+// module bundler. Intelligently bundles all the files that we can access in index.js
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -149,7 +150,9 @@ Open app.css and paste the below content
 
 ```
 
-
-# Please feel free to open issues if you find anything wrong in the instruction 
+run `npm run start` from the root directory. This will open a page at port 3000. We can change the port in `start` in `package.json`.
+Up to this point, we have a simple text displayed on the screen. Our app is fully functional.
+For any confusion please refer to the code in the repository.
+# Please feel free to open issues if you find anything wrong with the instructions
  
- Url to file issues : https://github.com/akshaymatoo/boilerplate-react-without-cra/issues
+ Url to file issues: https://github.com/akshaymatoo/boilerplate-react-without-cra/issues
