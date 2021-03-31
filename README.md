@@ -172,6 +172,7 @@ The above command will ask some questions how you want to configure your eslint 
 ? What format do you want your config file to be in? JSON
 ```
 Once you hit `Y` to install it will create a `.eslint.json` file and install some dependencies for it. You can see the dependencies in `devDependencies`. 
+run the command `npm run lint` to eslint configuration on the project. If you are on VSCode then enable ESLint and it will run on every save.
 # Please feel free to open issues if you find anything wrong with the instructions
  
  Url to file issues: https://github.com/akshaymatoo/boilerplate-react-without-cra/issues
