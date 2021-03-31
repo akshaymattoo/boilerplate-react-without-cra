@@ -4,10 +4,10 @@
   "description": "This is a React project setup where we are not using standard CRA. CRA is a great tool but for a small project or a quick proptype, it can be a big overhead sometimes. Also learning about things how they actually work is great.  Say in the current project we want to make some changes in webpack by this project we can easily learn about thigs. We get a quick understanding of the below things.",
   "main": "index.js",
   "babel": {
-  "presets": [
-    "@babel/preset-env",
-    "@babel/preset-react"
-  ]
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
   },
   "scripts": {
     "start": "webpack serve --port 3000 --hot --open",
@@ -35,6 +35,12 @@
     "@babel/preset-react": "^7.13.13",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.0",
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "html-webpack-plugin": "^5.3.1",
     "style-loader": "^2.0.0",
     "webpack": "^5.28.0",

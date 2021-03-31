@@ -153,6 +153,23 @@ Open App.css and paste the below content
 run `npm run start` from the root directory. This will open a page at port 3000. You will see some text on the screen.We can change the port in `start` in `package.json`.
 Up to this point, we have a simple text displayed on the screen. Our app is fully functional. You can add some comonents to it and start working.
 For any confusion please refer to the code in the repository.
+
+#Configure ESLint in the project.
+Why do we need ESLint. ESLint helps us keep the code consistent. Say you have someone working and you want to ensure same structure we can ensure that through ESLint. In this project we will be using `airbnb` style guide.
+
+- npx eslint --init
+
+The above command will ask some questions how you want to configure your eslint to be. Below is what I recommend for this project.
+```
+? How would you like to use ESLint? To check syntax, find problems, and enforce code style
+? What type of modules does your project use? JavaScript modules (import/export)
+? Which framework does your project use? React
+? Where does your code run? Browser
+? How would you like to define a style for your project? Use a popular style guide
+? Which style guide do you want to follow? Airbnb (https://github.com/airbnb/javascript)
+? What format do you want your config file to be in? JSON
+```
+Once you hit `Y` to install it will create a `.eslint.json` file and install some dependencies for it. You can see the dependencies in `devDependencies`. 
 # Please feel free to open issues if you find anything wrong with the instructions
  
  Url to file issues: https://github.com/akshaymatoo/boilerplate-react-without-cra/issues
