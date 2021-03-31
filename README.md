@@ -95,28 +95,28 @@ module.exports = {
 Open package.json file and paste the below content under scripts 
 
 ```
-	"start": "webpack serve --port 3000 --hot --open",
-   "build": "webpack --mode production",
+"start": "webpack serve --port 3000 --hot --open",
+"build": "webpack --mode production",
 ```
 
 Add the section in package.json
 
 ```
- "babel": {
-    "presets": [
-      "@babel/preset-env",
-      "@babel/preset-react"
-    ]
-  },
+"babel": {
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ]
+},
 ```
 
 Open index.js file and paste the below content
 ```
-	import React from 'react';
-	import ReactDOM from 'react-dom';
-	import App from './App';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-	ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 
 ```
 Open app.js file and paste the below content.
