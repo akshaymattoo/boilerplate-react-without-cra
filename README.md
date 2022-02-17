@@ -1,7 +1,7 @@
 # boilerplate-react-without-cra
 
 This is a React project setup where we are not using standard CRA. CRA is a great tool but for a small project or a quick proptype, it can be a big overhead sometimes. Also learning about things how they actually work is great. 
-Say in the current project we want to make some changes in webpack by this project we can easily learn about thigs. We get a quick understanding of the below things.
+Say in the current project we want to make some changes in webpack by this project we can easily learn about things. We get a quick understanding of the below things.
 
 - How things are structured in React?
 - How React understand JSX and converts it to ES5 JS?
